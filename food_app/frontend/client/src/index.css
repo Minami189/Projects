@@ -1,0 +1,301 @@
+body{
+  position:relative;
+  background-color: hsl(0, 0%, 10%);
+  margin:0;
+}
+.foodApp{
+  min-height: 100vh;
+}
+
+button{
+  cursor:pointer;
+  transition-duration: 250ms;
+}
+button:hover{
+  background-color: hsl(272, 80%, 30%);;
+  color:white;
+}
+
+.foods .foodHead{
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.foods{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 15px;
+  background-color: hsl(0, 0%, 10%);
+  width: 85%;
+  
+}
+.info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:25px;
+}
+.food{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 25px;
+  padding: 15px;
+  width: 200px;
+  height: 150px;
+  border: solid  hsl(272, 60%, 35%);
+  border-radius: 15px;
+  background-color:  hsl(0, 0%, 12%);
+  color:white;
+  box-shadow: hsl(0, 0%, 5%) 3px 3px 3px 3px;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+.food:hover{
+  background-color: hsl(272, 60%, 35%);
+}
+
+
+.foodHead button{
+  font-size: 1rem;
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+  height: 25px;
+}
+
+.foods .meat{
+  font-size: 1.2rem;
+  padding:0;
+  margin:0;
+}
+
+.eatenButton{
+  border-radius: 10px;
+  border:none;
+  font-size: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  width: 50px;
+}
+
+.sidebar{
+  display:flex;
+  position:fixed;
+  flex-direction: column;
+  align-items: center;
+  position:absolute;
+  top: 0%;
+  right: 0;
+  width: 15%;
+  min-height:100%;
+  background-color:  hsl(272, 50%, 25%);
+}
+
+.createButton{
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 15px;
+  width: 100px;
+  color:white;
+  background-color: hsl(0, 0%, 12%);
+}
+
+.interface{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interface input{
+  margin-bottom: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  border:none;
+  background-color: hsl(0, 0%, 15%);
+  color:white;
+}
+
+.Search{
+  display:flex;
+  padding: 5px 100px 5px 100px;
+  align-items: center;
+}
+
+.Search h2{
+  margin-right: 50px;
+}
+
+.Search input{
+  margin-top:15px;
+  font-size: 1.2rem;
+  padding: 10px 25px 10px 25px;
+  width: 500px;
+  border:none;
+  color:white;
+  border-radius: 15px;
+  background-color:hsl(0, 0%, 10%);
+}
+
+.head{
+  background-color:  hsl(0, 0%, 15%);
+  color:white;
+  min-height: 150px;
+  width: 85%;
+  display:flex;
+  align-items: center;
+}
+
+.searchBars{
+  display:flex;
+  flex-direction: column;
+}
+
+.header{
+  padding: 5px 50px 5px 50px;
+}
+
+.Eaten{
+  background-color:hsl(272, 60%, 35%);
+  padding:2px 12px 2px 12px;
+  border-radius: 15px;
+}
+
+.food .foodHead button{
+  font-size: 1.5rem;
+}
+
+.foodHead {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; 
+  position: relative; 
+}
+
+.foodHead h3 {
+  flex-grow: 1; 
+  text-align: center; 
+  margin: 0; 
+}
+
+.food .meat{
+  margin-top:25px;
+}
+
+.food .foodHead button{
+  color:hsl(0, 0%, 30%);
+  transition-duration: 2w00ms;
+}
+
+.food .foodHead button:hover{
+  color:white;
+}
+.plan{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dayMeal{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+
+  padding: 15px;
+  width: 95px;
+  height: 40px;
+  border: solid  hsl(272, 60%, 35%);
+  border-radius: 15px;
+  background-color:  hsl(0, 0%, 12%);
+  color:white;
+  box-shadow: hsl(0, 0%, 10%) 3px 3px 3px 3px;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+.planner{
+  margin:0;
+  padding:0;
+  width:85%;
+  color:white;
+  background-color: hsl(272, 60%, 25%);
+  text-align: center;
+}
+.week{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.dayMeal:hover{
+  background-color:  hsl(0, 82%, 55%);
+}
+
+.dayMeal h4, h5{
+  margin: 0;
+  margin-top:5px;
+  padding: 0;
+}
+
+.randomizeButton{
+  border-radius: none;
+  color:white;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  border:none;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 10%);
+}
+
+.controls{
+  display:flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.controls h2{
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  cursor:pointer;
+  background-color: hsl(0, 0%, 10%);
+  height: 35px;
+  width: 35px;
+  border-radius: 100px;
+}
+
+.controls h2:hover{
+  background-color: hsl(0, 82%, 55%);
+}
+
+.planTemplate{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.planTemplate h2{
+  margin-bottom: 5px;
+  color: hsl(0, 0%, 85%);
+  cursor:pointer;
+  transition-duration: 100ms;
+}
+
+.planTemplate h2:hover{
+  color: hsl(120, 70%, 40%);
+}
+
