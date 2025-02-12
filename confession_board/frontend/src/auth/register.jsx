@@ -28,7 +28,7 @@ function Register(){
             <label for="username">Username</label>
             <input ref={usernameInput} id="username" placeholder="Username"></input>
             <label for="password">Password</label>
-            <input ref={passwordInput} id="password" placeholder="Password"></input>
+            <input type="password" ref={passwordInput} id="password" placeholder="Password"></input>
             <p className={styles.message}>{msg}</p>
             
             <button className={styles.loginbutton} onClick={handleRegister}>Register</button>
